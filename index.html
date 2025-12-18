@@ -41,16 +41,9 @@
     #typing {
         font-size: 1.6rem;
         color: #e6005c;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         min-height: 40px;
         font-weight: bold;
-    }
-
-    img {
-        width: 100%;
-        border-radius: 20px;
-        margin-bottom: 15px;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     }
 
     button {
@@ -94,19 +87,16 @@
     <h1>Shivam ❤️ Shivangi</h1>
     <h2>From Friends to Forever</h2>
 
-    <!-- Typing text -->
+    <!-- Typing animation -->
     <div id="typing"></div>
-
-    <!-- Your photo -->
-    <img src="photo.jpg" alt="Shivam and Shivangi">
 
     <button onclick="showLove()">Love Note 💌</button>
     <button onclick="sharePage()">Share ❤️</button>
 
     <div id="message">
-        My favourite picture,  
-        my favourite person,  
-        my forever. 💕
+        You are my comfort, my happiness,  
+        my safest place.  
+        Always us. 💕
     </div>
 </div>
 
@@ -127,7 +117,6 @@
         document.getElementById("message").style.display = "block";
     }
 
-    /* Share Feature */
     function sharePage() {
         if (navigator.share) {
             navigator.share({
